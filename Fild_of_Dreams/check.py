@@ -1,4 +1,7 @@
 import random
 
 list = ['Мама', 'Папа', 'Дедушка', 'Бабушка']
-print(random.choice(list))
+
+
+if __name__ == '__main__':
+    print(random.choice(list))
