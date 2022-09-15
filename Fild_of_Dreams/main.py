@@ -2,5 +2,12 @@ import random
 
 mylist = ['Мама', 'Папа', 'Дедушка', 'Бабушка']
 
+
+def randon_word():
+    randon_word = random.choice(mylist)
+    print(randon_word)
+    return len(randon_word) * '*'
+
+
 if __name__ == '__main__':
-    print(random.choice(mylist))
+    print(randon_word())
