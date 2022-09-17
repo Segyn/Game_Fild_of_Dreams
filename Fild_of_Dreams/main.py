@@ -3,17 +3,25 @@ import random
 mylist = ['Мама', 'Папа', 'Дедушка', 'Бабушка']
 
 
-def randon_word():
-    randon_word = random.choice(mylist)
-    print(randon_word)
-    return len(randon_word) * '*'
+def create_randon_word() -> str:
+    randon_word1 = random.choice(mylist)
+    return randon_word1
 
 
-def word_user():
-    user_word = input('Введите букву: ')
-    return user_word
+randon_word = create_randon_word()
+
+
+def hide_world(randon_word):
+    star = len(randon_word) * '*'
+    return star
+
+
+# def word_user() -> str:
+#     user_word = input('Введите букву: ')
+#     return user_word
 
 
 if __name__ == '__main__':
-    print(randon_word())
-    print(word_user())
+    print(create_randon_word())
+    print(hide_world(randon_word))
+    # print(word_user())
