@@ -1,14 +1,6 @@
-import random
+import function
 
-mylist = ['Мама', 'Папа', 'Дедушка', 'Бабушка']
-
-
-def create_randon_word() -> str:
-    randon_word_create = random.choice(mylist)
-    return randon_word_create
-
-
-randon_word = create_randon_word()
+randon_word = function.create_randon_word()
 print(randon_word)
 
 
