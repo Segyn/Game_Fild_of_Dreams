@@ -13,13 +13,14 @@ print(randon_word)
 
 
 def hide_world(randon_word1):
+    print('Угадайте слово')
     star = len(randon_word1) * '*'
     return star
 
 
-# def user_litter() -> str:
-#     litter_user = input('Введите букву: ')
-#     return litter_user
+def user_litter() -> str:
+    litter_user = input('Введите букву: ')
+    return litter_user
 
 
 if __name__ == '__main__':
