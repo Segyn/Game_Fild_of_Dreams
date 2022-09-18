@@ -1,15 +1,17 @@
-import random
-
-list = ['Мама', 'Папа', 'Дедушка', 'Бабушка']
-
-
-def randon_word():
-    randon_word = random.choice(list)
-    print(randon_word)
-    return len(randon_word) * '*'
+randon_word = 'мама'
+litter_user = 'а'
 
 
-# input('введите слово')
+def test_litter_in_word():
+    word = []
+    for i in randon_word:
+
+        if i == litter_user:
+            word.append(litter_user)
+        else:
+            word.append('*')
+    return word
+
 
 if __name__ == '__main__':
-    print(randon_word())
+    print(test_litter_in_word())
