@@ -1,5 +1,5 @@
 randon_word = 'мама'
-litter_user = ['а', 'c', 'м']
+litter_user = []
 
 
 def test(litter_user):
