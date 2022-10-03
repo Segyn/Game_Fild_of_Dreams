@@ -2,6 +2,12 @@ randon_word = 'мама'
 litter_user = ['а', 'c', 'м']
 
 
+def test(litter_user):
+    a = input('введите букву ')
+    litter_user.append(a)
+    return litter_user
+
+
 def test_litter_in_word():
     word = []
     for i in randon_word:
@@ -14,4 +20,9 @@ def test_litter_in_word():
 
 
 if __name__ == '__main__':
-    print(test_litter_in_word())
+    # print(test_litter_in_word())
+    print(litter_user)
+    test(litter_user)
+    print(litter_user)
+    test(litter_user)
+    print(litter_user)
