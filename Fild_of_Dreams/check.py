@@ -1,14 +1,15 @@
 randon_word = 'мама'
-litter_user = []
+# litter_user = []
 
 
 def test(litter_user)->None:
+
     a = input('введите букву ')
     litter_user.append(a)
-    test_litter_in_word()
+    test_litter_in_word(litter_user)
 
 
-def test_litter_in_word():
+def test_litter_in_word(litter_user):
     word = []
     for i in randon_word:
 
@@ -26,4 +27,4 @@ def test_litter_in_word():
 
 
 if __name__ == '__main__':
-    test_litter_in_word()
+    test_litter_in_word([])
