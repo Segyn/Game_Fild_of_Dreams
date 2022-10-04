@@ -1,9 +1,11 @@
-randon_word = 'мама'
-# litter_user = []
+import random
+
+mylist = ['мама', 'папа', 'дедушка', 'бабушка']
+
+randon_word_create = random.choice(mylist)
 
 
-def test(litter_user)->None:
-
+def hide_word(litter_user):
     a = input('введите букву ')
     litter_user.append(a)
     test_litter_in_word(litter_user)
@@ -11,19 +13,17 @@ def test(litter_user)->None:
 
 def test_litter_in_word(litter_user):
     word = []
-    for i in randon_word:
-
+    for i in randon_word_create:
         if i in litter_user:
             word.append(i)
         else:
             word.append('*')
-    new_word = ''.join(word)
-
-    if new_word == randon_word:
-        return print(new_word+'\nПобеда!')
+    word = ''.join(word)
+    if word == randon_word_create:
+        return print(word + '\nПобеда!')
     else:
-        print(new_word)
-        test(litter_user)
+        print(word)
+        hide_word(litter_user)
 
 
 if __name__ == '__main__':
