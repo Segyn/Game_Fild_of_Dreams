@@ -2,7 +2,7 @@ randon_word = 'мама'
 litter_user = []
 
 
-def test(litter_user):
+def test(litter_user)->None:
     a = input('введите букву ')
     litter_user.append(a)
     test_litter_in_word()

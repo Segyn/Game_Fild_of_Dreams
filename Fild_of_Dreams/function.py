@@ -1,6 +1,6 @@
 import random
 
-mylist = ['Мама', 'Папа', 'Дедушка', 'Бабушка']
+mylist = ['мама', 'папа', 'дедушка', 'бабушка']
 
 
 def create_randon_word() -> str:
