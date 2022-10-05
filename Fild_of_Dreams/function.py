@@ -25,4 +25,4 @@ def test_litter_in_word(litter_user):
     # Если оно совпадает заканчиваем игру, иначе отправляем вводить новую букву.
     test_word = ''.join(test_word)
     return print(f'{test_word}\nПобеда!') if test_word == randon_word_create else (
-    print(test_word), hide_word(litter_user))
+        print(test_word+'\n'), hide_word(litter_user))
