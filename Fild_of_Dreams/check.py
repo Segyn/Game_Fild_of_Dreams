@@ -14,16 +14,10 @@ def hide_word(litter_user):
 def test_litter_in_word(litter_user):
     word = []
     for i in randon_word_create:
-        if i in litter_user:
-            word.append(i)
-        else:
-            word.append('*')
+        word.append(i) if i in litter_user else word.append('*')
+
     word = ''.join(word)
-    if word == randon_word_create:
-        return print(word + '\nПобеда!')
-    else:
-        print(word)
-        hide_word(litter_user)
+    return print(word + '\nПобеда!') if word == randon_word_create else (print(word), hide_word(litter_user))
 
 
 if __name__ == '__main__':
