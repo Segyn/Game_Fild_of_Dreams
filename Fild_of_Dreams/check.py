@@ -10,7 +10,12 @@ randon_word_create = random.choice(mylist)
 
 def hide_word(litter_user):
     a = input('введите букву: ')
-    litter_user.append(a) if a in rus_letters else print('Ошибка! Нужно вводить русскую букву.')
+    # проверка является ли введенный символ буквой
+    if a.isalpha():
+        # проверка буква русская или нет
+        litter_user.append(a) if a in rus_letters else print('Ошибка! Нужно вводить одну русскую букву.')
+    else:
+        print('Ошибка! Нужно вводить одну русскую букву.')
     test_litter_in_word(litter_user)
 
 
