@@ -1,11 +1,13 @@
 import random
 
 mylist = ['мама', 'папа', 'дедушка', 'бабушка']
+# создание случайного слова.
+randon_word_create = random.choice(mylist)
 # Массив русских букв.
 rus_letters = ["а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п",
                "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я"]
-# создание случайного слова.
-randon_word_create = random.choice(mylist)
+# Сообщение об ошибке ввода
+error_enter = 'Ошибка! Нужно вводить одну русскую букву.\n'
 
 
 def hide_word(litter_user):
@@ -13,9 +15,9 @@ def hide_word(litter_user):
     # проверка является ли введенный символ буквой
     if a.isalpha():
         # проверка буква русская или нет
-        litter_user.append(a) if a in rus_letters else print('Ошибка! Нужно вводить одну русскую букву.')
+        litter_user.append(a) if a in rus_letters else print(error_enter)
     else:
-        print('Ошибка! Нужно вводить одну русскую букву.')
+        print(error_enter)
     test_litter_in_word(litter_user)
 
 
